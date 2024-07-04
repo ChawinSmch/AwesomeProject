@@ -14,6 +14,13 @@ import Ex09 from './screens/week2/Ex09';
 import Ex10 from './screens/week2/Ex10';
 import Ex11 from './screens/week2/Ex11';
 import Ex12 from './screens/week2/Ex12';
+import Test from './screens/week3/test';
+import Greeting from './components/Greeting';
+import Travel from './screens/week3/Travel';
+import Signup from './components/week3/Signup';
+import Card from './components/week3/Card';
+import Hotel from './components/week3/Hotel';
+import MyIcon from './components/week3/Myicon';
 
 export default function App() {
   return (
@@ -28,7 +35,18 @@ export default function App() {
      // <Ex09/>
     // <Ex10/>
     //  <Ex11/>
-    <Ex12/>
+    //  <Ex12/>
+    // <Test/>
+    // <View style={{alignItems: 'center', top: 50}}>
+    //     <Greeting name='Boooo' />
+    //     <Greeting name='Karekaree' />
+    //     <Greeting name='Queyson' />
+    //   </View>
+     <Travel/>
+    //  <Signup/>
+    //  <Card/>
+    //  <Hotel/>
+     
   );
 }
 
