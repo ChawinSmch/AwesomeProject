@@ -3,7 +3,7 @@ import { ScrollView, Text, View } from "react-native";
 import Signup from "../../components/week3/Signup";
 import Card from "../../components/week3/Card";
 import Hotel from "../../components/week3/Hotel";
-import MyIcon from "../../components/week3/Myicon";
+// import MyIcon2 from "../../components/week3/Myicon2";
 import Menu from "../../components/week3/Menu";
 
 export default function Travel() {

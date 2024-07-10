@@ -1,8 +1,8 @@
 import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text,  View } from "react-native";
 
-export default function MyIcon(props) {
+export default function MyIcon2(props) {
   return (
     <View style={{ flex: 1,justifyContent:"center", alignItems: "center" }}>
       
