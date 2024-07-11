@@ -21,7 +21,8 @@ import React from 'react-native';
 // import Card from './components/week3/Card';
 // import Hotel from './components/week3/Hotel';
 // import MyIcon from './components/week3/Myicon';
- import Resort from './screens/week3/Resort';
+ //import Resort from './screens/week3/Resort';
+import Review from './screens/week3/Review';
 
 export default function App() {
   return (
@@ -47,6 +48,7 @@ export default function App() {
     //  <Signup/>
     //  <Card/>
      // <Hotel/>
-     <Resort /> 
+     //<Resort /> 
+     <Review/>
   );
 }
