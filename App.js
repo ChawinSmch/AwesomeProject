@@ -22,7 +22,11 @@ import React from 'react-native';
 // import Hotel from './components/week3/Hotel';
 // import MyIcon from './components/week3/Myicon';
  //import Resort from './screens/week3/Resort';
-import Review from './screens/week3/Review';
+//import Review from './screens/week3/Review';
+//import Health from './screens/week5/Health';
+import Home from './screens/week6/Home';
+import FlatListExample from './screens/week6/FlatListExample';
+//import Heartbeat from './components/week5/Heartbeat';
 
 export default function App() {
   return (
@@ -49,6 +53,10 @@ export default function App() {
     //  <Card/>
      // <Hotel/>
      //<Resort /> 
-     <Review/>
+     //<Review/>
+     //<Health/>
+     //<Heartbeat/>
+     <Home/>
+     //<FlatListExample/>
   );
 }
