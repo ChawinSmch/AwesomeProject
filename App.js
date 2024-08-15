@@ -24,9 +24,13 @@ import React from 'react-native';
  //import Resort from './screens/week3/Resort';
 //import Review from './screens/week3/Review';
 //import Health from './screens/week5/Health';
-import Home from './screens/week6/Home';
-import FlatListExample from './screens/week6/FlatListExample';
+//import Home from './screens/week6/Home';
+//import FlatListExample from './screens/week6/FlatListExample';
 //import Heartbeat from './components/week5/Heartbeat';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeStack from './navigations/HomeStack';
+import BottomTab from './navigations/BottomTab';
+import RootStack from './navigations/RootStack';
 
 export default function App() {
   return (
@@ -56,7 +60,12 @@ export default function App() {
      //<Review/>
      //<Health/>
      //<Heartbeat/>
-     <Home/>
+     //<Home/>
      //<FlatListExample/>
+     <NavigationContainer>
+            {/* <HomeStack /> */}
+            {/* <BottomTab /> */}
+            <RootStack />
+      </NavigationContainer>
   );
 }

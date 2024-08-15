@@ -2,8 +2,11 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import {   View,  TextInput, } from "react-native";
 import MyIcon2 from "../week3/MyIcon2";
+import { useNavigation } from "@react-navigation/native";
 
 export default function HomeIconMenu() {
+  const navigation = useNavigation();
+
   return (
     <View style={{ marginHorizontal : 20 , marginTop : -50 , padding : 20, borderWidth : 1, borderColor : 'gray', borderRadius : 20, backgroundColor : 'white' }}>
       {/* View ก้อนที่ 1 */}
@@ -12,14 +15,14 @@ export default function HomeIconMenu() {
       </View>
       {/* View ก้อนที่ 2 */}
       <View style={{ flexDirection : "row", marginTop : 10 , justifyContent : "space-around" }}>
-        <MyIcon2 title="xxx" name="question" size={30} color="orange" />
-        <MyIcon2 title="xxx" name="question" size={30} color="orange" />
+      <MyIcon2 title="Flex" name="th" size={30} color="orange" onPress={()=>{ navigation.navigate("Ex01"); }} />
+      <MyIcon2 title="Travel" name="airplane" size={30} color="orange" onPress={()=>{ navigation.navigate("Ex01"); }} />
         <MyIcon2 title="xxx" name="question" size={30} color="orange" />
         <MyIcon2 title="xxx" name="question" size={30} color="orange" />
       </View>
       {/* View ก้อนที่ 3 */}
       <View style={{ flexDirection : "row", marginTop : 10 , justifyContent : "space-around" }}>
-        <MyIcon2 title="xxx" name="question" size={30} color="orange" />
+      <MyIcon2 title="Pokemon" name="bolt" size={30} color="orange" onPress={()=>{ navigation.navigate("PokemonTab"); }} />
         <MyIcon2 title="xxx" name="question" size={30} color="orange" />
         <MyIcon2 title="xxx" name="question" size={30} color="orange" />
         <MyIcon2 title="More" name="ellipsis-h" size={30} color="orange" />
