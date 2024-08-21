@@ -32,6 +32,7 @@ import HomeStack from './navigations/HomeStack';
 import BottomTab from './navigations/BottomTab';
 import RootStack from './navigations/RootStack';
 
+
 export default function App() {
   return (
     //<Ex01/>

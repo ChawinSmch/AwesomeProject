@@ -3,6 +3,10 @@ import React from "react";
 import {   View,  TextInput, } from "react-native";
 import MyIcon2 from "../week3/MyIcon2";
 import { useNavigation } from "@react-navigation/native";
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+// import Travel from '../screens/week3/Travel';
+// import Resort from '../screens/week3/Resort';
+// import Health from '../screens/week5/Health';
 
 export default function HomeIconMenu() {
   const navigation = useNavigation();
@@ -13,12 +17,12 @@ export default function HomeIconMenu() {
       <View style={{ backgroundColor : '#eeeeee', padding : 10 , borderRadius : 10 }} >
         <TextInput style={{ fontSize : 20 }} placeholder="What're you looking for ?" />
       </View>
-      {/* View ก้อนที่ 2 */}
+      {/* View ก้อนที่ 2 */} 
       <View style={{ flexDirection : "row", marginTop : 10 , justifyContent : "space-around" }}>
       <MyIcon2 title="Flex" name="th" size={30} color="orange" onPress={()=>{ navigation.navigate("Ex01"); }} />
-      <MyIcon2 title="Travel" name="airplane" size={30} color="orange" onPress={()=>{ navigation.navigate("Ex01"); }} />
-        <MyIcon2 title="xxx" name="question" size={30} color="orange" />
-        <MyIcon2 title="xxx" name="question" size={30} color="orange" />
+      <MyIcon2 title="Travel" name="plane" size={30} color="orange" onPress={()=>{ navigation.navigate("Travel"); }} />
+      <MyIcon2 title="Resort" name="bed" size={30} color="orange" onPress={ ()=>{ navigation.navigate("Resort") }} />
+      <MyIcon2 title="Health" name="heart" size={30} color="orange"onPress={ ()=>{ navigation.navigate("Health") }} />
       </View>
       {/* View ก้อนที่ 3 */}
       <View style={{ flexDirection : "row", marginTop : 10 , justifyContent : "space-around" }}>
