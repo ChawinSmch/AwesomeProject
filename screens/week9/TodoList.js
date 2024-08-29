@@ -74,6 +74,7 @@ export default function TodoList() {
         console.log(removed_t);
         setTodos(t);                
         
+        TodoStorage.writeItems(t)
         TodoStorage.removeItem(t[index]);
         // REMOVE AN ITEM FROM STORAGE - WRITE CODE HERE
         
