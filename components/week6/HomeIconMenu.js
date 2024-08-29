@@ -31,6 +31,13 @@ export default function HomeIconMenu() {
         <MyIcon2 title="xxx" name="question" size={30} color="orange" />
         <MyIcon2 title="More" name="ellipsis-h" size={30} color="orange" />
       </View>
+      {/* View ก้อนที่ 4 */}
+      <View style={{ flexDirection: "row", marginTop: 10 }}>
+                <MyIcon2 title="YourHealth" name="user-circle" size={30} color="orange" onPress={ ()=>{ navigation.navigate("YourHealth") }} />
+                <MyIcon2 title="TodoList" name="list" size={30} color="orange" onPress={ ()=>{ navigation.navigate("TodoList") }} />
+                <MyIcon2 title="xxx" name="question" size={30} color="orange" onPress={ ()=>{ navigation.navigate("xxx") }} />
+                <MyIcon2 title="xxx" name="question" size={30} color="orange" onPress={ ()=>{ navigation.navigate("xxx") }}  />
+      </View>
     </View>
   );
 }
