@@ -1,12 +1,13 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+// import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { FontAwesome } from "@expo/vector-icons";
-import Home from '../screens/week6/Home';
+// import Home from '../screens/week6/Home';
 import Ant from '../screens/week6/Ant';
 import Bird from '../screens/week6/Bird';
 import Cat from '../screens/week6/Cat';
 import HomeStack from './HomeStack';
+import AuthStack from '../navigations/AuthStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -46,7 +47,18 @@ export default function BottomTab() {
             tabBarIcon: ({ color, size }) => (<FontAwesome name="paw" color={color} size={size} />),
             }}
             />
+            <Tab.Screen
+        name="AuthStack"
+        component={AuthStack}
+        options={{
+          tabBarLabel: "บัญชี",
+          tabBarIcon: ({ color, size }) => (<FontAwesome name="user" color={color} size={size} />),
+          headerShown: false,
+        }}
+      />
         </Tab.Navigator>
+
+        
       );
     
 

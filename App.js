@@ -32,6 +32,7 @@ import HomeStack from './navigations/HomeStack';
 import BottomTab from './navigations/BottomTab';
 import RootStack from './navigations/RootStack';
 import ChartKitScreen from './screens/week5/ChartKitScreen';
+import { AuthContextProvider } from './hooks/AuthContextProvider';
 
 
 export default function App() {
@@ -64,11 +65,13 @@ export default function App() {
      //<Heartbeat/>
      //<Home/>
      //<FlatListExample/>
+     <AuthContextProvider>
      <NavigationContainer>
             {/* <HomeStack /> */}
             {/* <BottomTab /> */}
             <RootStack />
       </NavigationContainer>
+      </AuthContextProvider>
     // <ChartKitScreen/>
   );
 }
